@@ -87,6 +87,9 @@
 #     break
 #   else:
 #     print("Sorry! I don't understand that")
+price = 0
 
-for character in range(10):
-  print(character)
+for i in [10, 20, 30]:
+  price += i
+
+print(price)
