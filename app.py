@@ -110,9 +110,9 @@
 
 #  Largest number on the list
 
-numbers = [1,3,5,6,7]
+numbers = [1,3,5,10,6,7]
 
-biggest_num = 0
+biggest_num = numbers[0]
 for number in numbers:
   if number > biggest_num:
     biggest_num = number
