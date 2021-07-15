@@ -176,3 +176,16 @@
 # x, y, z = coordinates  # does the same as the above code
 
 # print(x)
+
+# Dictionary
+
+customer = {
+  "name": "John Smith",
+  "age": 30,
+  "is_verfied": True
+}
+customer["job"] = "accountant"
+print(customer)
+
+print(customer["name"]) # returns error if doesn't exist
+print(customer.get("birthday", "jan 1"))  # 2nd argument - default value 
