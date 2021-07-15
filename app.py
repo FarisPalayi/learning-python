@@ -134,34 +134,45 @@
 
 #  List methods 
 
-list = [9, 5, 4, 2, 8, 2]
-list.append(23)
-list.insert(0, 10)  # to add it in desired index
-list.remove(2)  # removes the first occurrence of 2
-list.pop()  # removes the last item
-list.sort()
-list.reverse()
-list2 = list.copy()  # copies
-list.clear()  # to empty a list
+# list = [9, 5, 4, 2, 8, 2]
+# list.append(23)
+# list.insert(0, 10)  # to add it in desired index
+# list.remove(2)  # removes the first occurrence of 2
+# list.pop()  # removes the last item
+# list.sort()
+# list.reverse()
+# list2 = list.copy()  # copies
+# list.clear()  # to empty a list
 
-print(list)
-print(list2)
+# print(list)
+# print(list2)
 
-string_list = ['what', 'a', 'when', 'oh', 'that']
+# string_list = ['what', 'a', 'when', 'oh', 'that']
 
-print(string_list.index('when'))  # to find the index of an item. if there's none, gets an error
-print('when' in string_list)  # returns a boolean value
-print(string_list.count('oh'))  # counts the occurrence of a specific items is in a list
-string_list.sort()
-print(string_list)
+# print(string_list.index('when'))  # to find the index of an item. if there's none, gets an error
+# print('when' in string_list)  # returns a boolean value
+# print(string_list.count('oh'))  # counts the occurrence of a specific items is in a list
+# string_list.sort()
+# print(string_list)
 
-#  Remove duplicates from a list
+# #  Remove duplicates from a list
 
-numbers = [1,3,1]
-uniques = []
+# numbers = [1,3,1]
+# uniques = []
 
-for number in numbers:
-  if number not in uniques:
-    uniques.append(number)
+# for number in numbers:
+#   if number not in uniques:
+#     uniques.append(number)
 
-print(uniques)
+# print(uniques)
+
+# tuple = (1, 2, 3)  # it's like a list, but can't change any values
+
+# coordinates = (1, 2, 3)
+# x = coordinates[0]
+# y = coordinates[1]
+# z = coordinates[2]
+# # onpacking
+# x, y, z = coordinates  # does the same as the above code
+
+# print(x)
