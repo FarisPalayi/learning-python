@@ -9,4 +9,5 @@ print('john' in name)  # check to see if it includes
 print(10 / 3)
 print(10 // 3)  # returns an integer
 print(2 ** 3)  # power
-print(round(4.1))  # always returns a #! positive value
+print(round(-4.1))
+print(abs(-3))  # always returns a positive value
