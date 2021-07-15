@@ -179,13 +179,35 @@
 
 # Dictionary
 
-customer = {
-  "name": "John Smith",
-  "age": 30,
-  "is_verfied": True
-}
-customer["job"] = "accountant"
-print(customer)
+# customer = {
+#   "name": "John Smith",
+#   "age": 30,
+#   "is_verfied": True
+# }
+# customer["job"] = "accountant"
+# print(customer)
 
-print(customer["name"]) # returns error if doesn't exist
-print(customer.get("birthday", "jan 1"))  # 2nd argument - default value 
+# print(customer["name"]) # returns error if doesn't exist
+# print(customer.get("birthday", "jan 1"))  # 2nd argument - default value 
+
+phone = input('Enter phone number: ')
+
+digits_mapping = {
+  "0": "zero",
+  "1": "one",
+  "2": "two",
+  "3": "three",
+  "4": "four",
+  "5": "five",
+  "6": "six",
+  "7": "seven",
+  "8": "eight",
+  "9": "nine",
+}
+
+digits_in_characters = ''
+
+for digit in phone:
+  digits_in_characters += digits_mapping.get(digit, "!") + " "
+
+print(digits_in_characters)
