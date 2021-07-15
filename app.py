@@ -110,10 +110,24 @@
 
 #  Largest number on the list
 
-numbers = [1,3,5,10,6,7]
+# numbers = [1,3,5,10,6,7]
 
-biggest_num = numbers[0]
-for number in numbers:
-  if number > biggest_num:
-    biggest_num = number
-print(biggest_num)
+# biggest_num = numbers[0]
+# for number in numbers:
+#   if number > biggest_num:
+#     biggest_num = number
+# print(biggest_num)
+
+#  2d list / matrix
+
+matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+]
+
+print(matrix[0][2])
+
+for row in matrix:
+  for item in row:
+    print(item)
