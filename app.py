@@ -63,7 +63,7 @@
 # Car Game
 
 user_command = ''
-car_state = 'stop'
+started = False
 
 while True:
   user_command = input('> ').lower()
@@ -72,17 +72,17 @@ while True:
     print("stop - to stop the car")
     print("quit - to exit")
   elif user_command == 'start':
-    if car_state == 'start':
+    if started:
       print('Car is already started')
     else:
       print("Car started... ready to go!")
-    car_state = 'start'
+    started = True
   elif user_command == 'stop':
-    if car_state == 'stop':
+    if not started:
       print("Car is already stopped")
     else:
       print("Car stopped")
-    car_state = 'stop'
+    started = False
   elif user_command == 'quit':
     break
   else:
