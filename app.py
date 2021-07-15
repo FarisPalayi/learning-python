@@ -88,7 +88,5 @@
 #   else:
 #     print("Sorry! I don't understand that")
 
-string = "Python"
-
-for character in string:
+for character in range(10):
   print(character)
