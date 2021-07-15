@@ -62,19 +62,17 @@
 
 # Car Game
 
-user_command = ''
- 
-while user_command.lower() != 'quit':
+while True:
   user_command = input('> ').lower()
-  if user_command == 'start':
+  if user_command == 'help':
+    print("start - to start the car")
+    print("stop - to stop the car")
+    print("quit - to exit")
+  elif user_command == 'start':
     print("Car started... ready to go!")
   elif user_command == 'stop':
     print("Car stopped")
-  elif user_command == 'help':
-    print("""
-    start - to start the car
-    stop - to stop the car)
-    quit - to exit
-    """)
+  elif user_command == 'quit':
+    break
   else:
     print("Sorry! I don't understand that")
