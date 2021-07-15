@@ -34,24 +34,45 @@
 #   print('*' * i)
 #   i += 1
 # print("done")
-import random
 
-print('''
-Guess The Number 
-Hint: it's between 1-10(10 is excluded)
-''')
+# GUESS GAME
 
-user_guessed = ''
-secret_number = random.randint(0,9)
+# import random
 
-guess_count =  1
-guess_limit = 3
+# print('''
+# Guess The Number 
+# Hint: it's between 1-10(10 is excluded)
+# ''')
 
-while guess_count <= guess_limit:
-  user_guessed = int(input('Guess: '))
-  guess_count += 1
-  if user_guessed == secret_number:
-    print("You won!")
+# user_guessed = ''
+# secret_number = random.randint(0,9)
+
+# guess_count =  1
+# guess_limit = 3
+
+# while guess_count <= guess_limit:
+#   user_guessed = int(input('Guess: '))
+#   guess_count += 1
+#   if user_guessed == secret_number:
+#     print("You won!")
+#     break
+# else:
+#   print('You lost!')
+
+
+# Car Game
+
+while True:
+  user_command = input()
+  if user_command == 'help':
+    print("start - to start the car")
+    print("stop - to stop the car")
+    print("quit - to exit")
+  elif user_command == 'start':
+    print("Car started... ready to go!")
+  elif user_command == 'stop':
+    print("Car stopped")
+  elif user_command == 'quit':
     break
-else:
-  print('You lost!')
+  else:
+    print("I don't understand that")
