@@ -216,17 +216,24 @@
 
 # emoji mapping
 
-message = input(">")
-words = message.split(" ")
+# message = input(">")
+# words = message.split(" ")
 
-emojis = {
-  ":)": "😀",
-  ":(": "😞"
-}
+# emojis = {
+#   ":)": "😀",
+#   ":(": "😞"
+# }
 
-output = ''
+# output = ''
 
-for word in words:
-  output += emojis.get(word, word) + " "
+# for word in words:
+#   output += emojis.get(word, word) + " "
 
-print(output)
+# print(output)
+
+def greet_user():
+  print("Hi there!")
+  print("Welcome aboard")
+
+
+greet_user()
