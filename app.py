@@ -62,28 +62,33 @@
 
 # Car Game
 
-user_command = ''
-started = False
+# user_command = ''
+# started = False
 
-while True:
-  user_command = input('> ').lower()
-  if user_command == 'help':
-    print("start - to start the car")
-    print("stop - to stop the car")
-    print("quit - to exit")
-  elif user_command == 'start':
-    if started:
-      print('Car is already started')
-    else:
-      print("Car started... ready to go!")
-    started = True
-  elif user_command == 'stop':
-    if not started:
-      print("Car is already stopped")
-    else:
-      print("Car stopped")
-    started = False
-  elif user_command == 'quit':
-    break
-  else:
-    print("Sorry! I don't understand that")
+# while True:
+#   user_command = input('> ').lower()
+#   if user_command == 'help':
+#     print("start - to start the car")
+#     print("stop - to stop the car")
+#     print("quit - to exit")
+#   elif user_command == 'start':
+#     if started:
+#       print('Car is already started')
+#     else:
+#       print("Car started... ready to go!")
+#     started = True
+#   elif user_command == 'stop':
+#     if not started:
+#       print("Car is already stopped")
+#     else:
+#       print("Car stopped")
+#     started = False
+#   elif user_command == 'quit':
+#     break
+#   else:
+#     print("Sorry! I don't understand that")
+
+string = "Python"
+
+for character in string:
+  print(character)
