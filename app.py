@@ -87,9 +87,13 @@
 #     break
 #   else:
 #     print("Sorry! I don't understand that")
-price = 0
+# price = 0
 
-for i in [10, 20, 30]:
-  price += i
+# for i in [10, 20, 30]:
+#   price += i
 
-print(price)
+# print(price)
+
+for x in range(4):
+  for y in range(3):
+    print(f"({x}, {y})")
