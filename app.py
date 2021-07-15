@@ -154,3 +154,14 @@ print('when' in string_list)  # returns a boolean value
 print(string_list.count('oh'))  # counts the occurrence of a specific items is in a list
 string_list.sort()
 print(string_list)
+
+#  Remove duplicates from a list
+
+numbers = [1,3,1]
+uniques = []
+
+for number in numbers:
+  if number not in uniques:
+    uniques.append(number)
+
+print(uniques)
