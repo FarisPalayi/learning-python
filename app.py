@@ -16,12 +16,15 @@ import math  # modules
 
 print(math.ceil(4.4))
 
-is_hot = False
-is_cold = True
+is_high_income = True
+has_good_credit = True
+has_criminal_record = False
 
-if is_hot:
-  print("wow it's hot")
-elif is_cold:
-  print("oo it's freezing out there")
-else:
-  print("not that hot")
+if is_high_income and has_good_credit:
+  print("He is rich man")
+
+if is_high_income or has_good_credit:
+  print("He is kinda rich")
+
+if (is_high_income or has_good_credit) and not has_criminal_record:
+  print("yep, he is eligible I guess")
