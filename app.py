@@ -29,8 +29,29 @@
 # if (is_high_income or has_good_credit) and not has_criminal_record:
 #   print("yep, he is eligible I guess")
 
-i = 0
-while i <= 10:
-  print('*' * i)
-  i += 1
-print("done")
+# i = 0
+# while i <= 10:
+#   print('*' * i)
+#   i += 1
+# print("done")
+import random
+
+print('''
+Guess The Number 
+Hint: it's between 1-10(10 is excluded)
+''')
+
+user_guessed = ''
+secret_number = random.randint(0,9)
+
+guess_count =  1
+guess_limit = 3
+
+while guess_count <= guess_limit:
+  user_guessed = int(input('Guess: '))
+  guess_count += 1
+  if user_guessed == secret_number:
+    print("You won!")
+    break
+else:
+  print('You lost!')
