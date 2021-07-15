@@ -98,10 +98,22 @@
 #   for y in range(3):
 #     print(f"({x}, {y})")
 
-numbers = [5, 2, 5, 2, 2]
+#  Print an F
 
-for i in numbers:
-  f = ''
-  for j in range(i):
-    f += 'x'
-  print(f)
+# numbers = [5, 2, 5, 2, 2]
+
+# for i in numbers:
+#   f = ''
+#   for j in range(i):
+#     f += 'x'
+#   print(f)
+
+#  Largest number on the list
+
+numbers = [1,3,5,6,7]
+
+biggest_num = 0
+for number in numbers:
+  if number > biggest_num:
+    biggest_num = number
+print(biggest_num)
