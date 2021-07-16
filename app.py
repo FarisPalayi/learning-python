@@ -423,7 +423,7 @@
 
 #! Files and Directories
 # filesystem paths
-from pathlib import Path
+# from pathlib import Path
 
 # path = Path("ecommerce")  #* if there's no arguments it will reference current directory
 # print(path.exists())
@@ -434,8 +434,46 @@ from pathlib import Path
 #* remove directory
 # path.rmdir()
 
-path = Path()
+# path = Path()
 # print(path.glob('*.py'))  #* to search.('*' means everything)
 
-for file in path.glob('*.py'):
-  print(file)
+# for file in path.glob('*.py'):
+#   print(file)
+
+#! external python packages
+#! Working with spreadsheets
+
+#* https://pypi.org
+
+#* Openpyxl - to work with excel spreadsheets
+# https://pypi.org/project/openpyxl/
+
+import openpyxl as xl
+from openpyxl.chart import BarChart, Reference
+
+wb = xl.load_workbook('transactions.xlsx')
+
+sheet = wb['Sheet1']
+cell = sheet['a1']  # to get a particular cell
+cell = sheet.cell(1, 1)  # another method to get a cell
+
+print(cell.value)
+print(sheet.max_row)  # total rows
+
+for row in range(2, sheet.max_row + 1):
+  cell = sheet.cell(row, 3)
+  corrected_price = cell.value * 0.9
+  corrected_price_cell = sheet.cell(row, 4)  # new column
+  corrected_price_cell.value = corrected_price 
+
+values = Reference(sheet,
+          min_row=2,
+          max_row=sheet.max_row,
+          min_col=4,
+          max_col=4)
+
+chart = BarChart()
+chart.add_data(values)
+sheet.add_chart(chart, 'E2')
+
+wb.save('transactions2.xlsx')
