@@ -408,15 +408,34 @@
 
 #! Dice
 
-import random
+# import random
 
 
-class Dice:
-  def roll(self):
-    first = random.randint(1, 6)
-    second = random.randint(1, 6)
-    return first, second  #* we don't need to write (first, second) since python automatically convert it to a tuple
+# class Dice:
+#   def roll(self):
+#     first = random.randint(1, 6)
+#     second = random.randint(1, 6)
+#     return first, second  #* we don't need to write (first, second) since python automatically convert it to a tuple
 
 
-dice = Dice()
-print(dice.roll())
+# dice = Dice()
+# print(dice.roll())
+
+#! Files and Directories
+# filesystem paths
+from pathlib import Path
+
+# path = Path("ecommerce")  #* if there's no arguments it will reference current directory
+# print(path.exists())
+
+#* create a new directory
+# path = Path("emails")
+# path.mkdir() 
+#* remove directory
+# path.rmdir()
+
+path = Path()
+# print(path.glob('*.py'))  #* to search.('*' means everything)
+
+for file in path.glob('*.py'):
+  print(file)
