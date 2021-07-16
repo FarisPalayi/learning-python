@@ -1,3 +1,7 @@
+# Used Better Comments vscode extension for the readability of comments
+
+#! user input and print
+
 # name = input("Type your name \n")
 # print(f"So your name is {name}")
 
@@ -12,9 +16,20 @@
 # print(round(-4.1))
 # print(abs(-3))  # always returns a positive value
 
+#! multiline string
+
+# print("""
+# multiline
+# string
+# """)
+
+#! math module (look at the docs)
+
 # import math  # modules
 
 # print(math.ceil(4.4))
+
+#! if statements
 
 # is_high_income = True
 # has_good_credit = True
@@ -29,13 +44,15 @@
 # if (is_high_income or has_good_credit) and not has_criminal_record:
 #   print("yep, he is eligible I guess")
 
+#! while loop
+
 # i = 0
 # while i <= 10:
 #   print('*' * i)
 #   i += 1
 # print("done")
 
-# GUESS GAME
+#! GUESS GAME
 
 # import random
 
@@ -60,7 +77,7 @@
 #   print('You lost!')
 
 
-# Car Game
+#! Car Game
 
 # user_command = ''
 # started = False
@@ -87,6 +104,9 @@
 #     break
 #   else:
 #     print("Sorry! I don't understand that")
+
+#! for loop & range
+
 # price = 0
 
 # for i in [10, 20, 30]:
@@ -98,9 +118,14 @@
 #   for y in range(3):
 #     print(f"({x}, {y})")
 
-#  Print an F
+#! List
 
-# numbers = [5, 2, 5, 2, 2]
+# list = [1, 2, 3, 4]
+# list = ["cat", "dog", "horse"]
+
+#! Print an F
+
+# numbers = [5, 2, 5, 2, 2] 
 
 # for i in numbers:
 #   f = ''
@@ -108,7 +133,7 @@
 #     f += 'x'
 #   print(f)
 
-#  Largest number on the list
+#! Print Largest number on the list
 
 # numbers = [1,3,5,10,6,7]
 
@@ -116,9 +141,10 @@
 # for number in numbers:
 #   if number > biggest_num:
 #     biggest_num = number
+
 # print(biggest_num)
 
-#  2d list / matrix
+#!  2d list / matrix
 
 # matrix = [
 #   [1, 2, 3],
@@ -132,7 +158,7 @@
 #   for item in row:
 #     print(item)
 
-#  List methods 
+#!  List methods 
 
 # list = [9, 5, 4, 2, 8, 2]
 # list.append(23)
@@ -155,7 +181,7 @@
 # string_list.sort()
 # print(string_list)
 
-# #  Remove duplicates from a list
+#! Remove duplicates from a list
 
 # numbers = [1,3,1]
 # uniques = []
@@ -166,18 +192,21 @@
 
 # print(uniques)
 
-# tuple = (1, 2, 3)  # it's like a list, but can't change any values
+#! Tuple 
+
+# tuple = (1, 2, 3)  #* it's like a list, but can't change any values
 
 # coordinates = (1, 2, 3)
 # x = coordinates[0]
 # y = coordinates[1]
 # z = coordinates[2]
-# # onpacking
-# x, y, z = coordinates  # does the same as the above code
+
+#! onpacking (works with lists too)
+# x, y, z = coordinates  #? does the same as the above code ↖
 
 # print(x)
 
-# Dictionary
+#! Dictionary
 
 # customer = {
 #   "name": "John Smith",
@@ -187,10 +216,10 @@
 # customer["job"] = "accountant"
 # print(customer)
 
-# print(customer["name"]) # returns error if doesn't exist
-# print(customer.get("birthday", "jan 1"))  # 2nd argument - default value 
+# print(customer["name"]) #* returns error if doesn't exist
+# print(customer.get("birthday", "jan 1"))  #* 2nd argument - default value 
 
-# number mapping
+#! number mapping
 
 # phone = input('Enter phone number: ')
 
@@ -214,7 +243,7 @@
 
 # print(digits_in_characters)
 
-# emoji mapping
+#! emoji converter
 
 # message = input(">")
 # words = message.split(" ")
@@ -231,6 +260,8 @@
 
 # print(output)
 
+#! functions (def - define function)
+
 # def greet_user(first_name, last_name):
 #   print(f"Hi {first_name} {last_name}!")
 #   print("Welcome aboard")
@@ -239,6 +270,7 @@
 # greet_user('john', last_name='smith')  # positional arguments should always come first 
 # print(greet_user('john', 'smith'))  # by default functions returns None
 
+#! emoji converter in a function
 
 # def emoji_converter(message):
 #   words = message.split(" ")
@@ -254,7 +286,7 @@
 
 # print(emoji_converter(input(">")))
 
-# Handling Errors
+#! Handling Errors (try except)
 
 # try:
 #   age = int(input("Age: "))
@@ -266,11 +298,14 @@
 # except ValueError:
 #   print("Invalid value")
 
-# Comments
-#* never right comments that explains 'what the code does'
-#* Use comments that explains whys and hows
+#! Comments
 
-# self is a reference to the current object
+#* never write comments that explains 'what the code does'
+#* Use comments that explains the whys and hows
+
+#! Classes
+
+#* self is a reference to the current object (kinda like 'this' in javascript)
 # so self.x means point1.x (point1 is an instance of Point class)
 # class Point:
 #   def __init__(self, x, y):  # constructor method
@@ -302,18 +337,33 @@
 # john.talk()
 # print(john.name)
 
+#! Inheritance
 
-class Mammal:
-  def walk(self):
-    print("walk")
+# class Mammal:
+#   def walk(self):
+#     print("walk")
 
-class Dog(Mammal):  # Dog inherits Mammal
-  def bark(self):
-    print("bark")
+# class Dog(Mammal):  # Dog inherits Mammal
+#   def bark(self):
+#     print("bark")
 
-class Cat(Mammal): 
-  pass
+# class Cat(Mammal): 
+#   pass
 
-dog1 = Dog()
-dog1.walk()
-dog1.bark()
+# dog1 = Dog()
+# dog1.walk()
+# dog1.bark()
+
+#! Modules
+
+import converters  #* import entire module
+
+print(converters.kg_to_lbs(70))
+
+from converters import lbs_to_kg  #* import a specific function
+
+print(lbs_to_kg(20))
+
+from utils import find_max
+
+print(find_max([2, 5,9, 3, 8]))
