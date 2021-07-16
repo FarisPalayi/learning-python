@@ -356,14 +356,32 @@
 
 #! Modules
 
-import converters  #* import entire module
+# import converters  #* import entire module
 
-print(converters.kg_to_lbs(70))
+# print(converters.kg_to_lbs(70))
 
-from converters import lbs_to_kg  #* import a specific function
+# from converters import lbs_to_kg  #* import a specific function
 
-print(lbs_to_kg(20))
+# print(lbs_to_kg(20))
 
-from utils import find_max
+# from utils import find_max
 
-print(find_max([2, 5,9, 3, 8]))
+# print(find_max([2, 5,9, 3, 8]))
+
+# print(max([2, 5,9, 3, 8]))  #* max is a built in function in python
+
+#! Packages
+
+#* packages are essentially a folder that contains related python modules/files
+#* to make a folder a python package, create a .py file named __init__
+
+#* here, the folder ecommerce is a package 
+
+# import ecommerce.shipping  #* import entire module from a package
+# ecommerce.shipping.calc_shipping()
+
+# from ecommerce.shipping import calc_shipping  #* import a specific function
+# calc_shipping()
+
+# from ecommerce import shipping  #* import a module from a package
+# shipping.calc_shipping()
