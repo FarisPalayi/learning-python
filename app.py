@@ -231,9 +231,10 @@
 
 # print(output)
 
-def greet_user():
-  print("Hi there!")
+def greet_user(first_name, last_name):
+  print(f"Hi {first_name} {last_name}!")
   print("Welcome aboard")
 
 
-greet_user()
+greet_user('john', last_name='smith')  # positional arguments should always come first 
+print(greet_user('john', 'smith'))  # by default functions returns None
