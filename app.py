@@ -270,15 +270,21 @@
 #* never right comments that explains 'what the code does'
 #* Use comments that explains whys and hows
 
+# self is a reference to the current object
+# so self.x means point1.x (point1 is an instance of Point class)
 class Point:
+  def __init__(self, x, y):  # constructor method
+    self.x = x
+    self.y = y
+
   def move(self):
     print("move")
 
   def draw(self):
     print("draw")
 
-point1 = Point()
-point1.draw()
+point1 = Point(10, 20)
 point1.x = 20
+point1.draw()
 
 print(point1.x)
