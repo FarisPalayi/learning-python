@@ -385,3 +385,38 @@
 
 # from ecommerce import shipping  #* import a module from a package
 # shipping.calc_shipping()
+
+#! Built-in functions
+
+# 🔍search: python 3 module index
+
+# import random
+
+# random.random()  #* generate a random number between 0 and 1
+
+# for i in range(3):
+#   print(random.random())
+#   print(random.randint(10, 20))
+
+# #! Select a leader from a team list randomly
+
+# team = ['John', 'Richards', 'Roberts', 'Anna']
+
+# leader = random.choice(team)
+
+# print(leader)
+
+#! Dice
+
+import random
+
+
+class Dice:
+  def roll(self):
+    first = random.randint(1, 6)
+    second = random.randint(1, 6)
+    return first, second  #* we don't need to write (first, second) since python automatically convert it to a tuple
+
+
+dice = Dice()
+print(dice.roll())
