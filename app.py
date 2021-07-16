@@ -231,10 +231,37 @@
 
 # print(output)
 
-def greet_user(first_name, last_name):
-  print(f"Hi {first_name} {last_name}!")
-  print("Welcome aboard")
+# def greet_user(first_name, last_name):
+#   print(f"Hi {first_name} {last_name}!")
+#   print("Welcome aboard")
 
 
-greet_user('john', last_name='smith')  # positional arguments should always come first 
-print(greet_user('john', 'smith'))  # by default functions returns None
+# greet_user('john', last_name='smith')  # positional arguments should always come first 
+# print(greet_user('john', 'smith'))  # by default functions returns None
+
+
+# def emoji_converter(message):
+#   words = message.split(" ")
+#   emojis = {
+#     ":)": "😀",
+#     ":(": "😞"
+#   }
+#   output = ''
+#   for word in words:
+#     output += emojis.get(word, word) + " "
+#   return output
+
+
+# print(emoji_converter(input(">")))
+
+# Handling Errors
+
+try:
+  age = int(input("Age: "))
+  income = 20000
+  risk = income / age
+  print(age)
+except ZeroDivisionError:
+  print("Age cannot be zero")
+except ValueError:
+  print("Invalid value")
