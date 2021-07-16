@@ -256,12 +256,29 @@
 
 # Handling Errors
 
-try:
-  age = int(input("Age: "))
-  income = 20000
-  risk = income / age
-  print(age)
-except ZeroDivisionError:
-  print("Age cannot be zero")
-except ValueError:
-  print("Invalid value")
+# try:
+#   age = int(input("Age: "))
+#   income = 20000
+#   risk = income / age
+#   print(age)
+# except ZeroDivisionError:
+#   print("Age cannot be zero")
+# except ValueError:
+#   print("Invalid value")
+
+# Comments
+#* never right comments that explains 'what the code does'
+#* Use comments that explains whys and hows
+
+class Point:
+  def move(self):
+    print("move")
+
+  def draw(self):
+    print("draw")
+
+point1 = Point()
+point1.draw()
+point1.x = 20
+
+print(point1.x)
