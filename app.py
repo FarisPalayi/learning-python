@@ -272,19 +272,48 @@
 
 # self is a reference to the current object
 # so self.x means point1.x (point1 is an instance of Point class)
-class Point:
-  def __init__(self, x, y):  # constructor method
-    self.x = x
-    self.y = y
+# class Point:
+#   def __init__(self, x, y):  # constructor method
+#     self.x = x
+#     self.y = y
 
-  def move(self):
-    print("move")
+#   def move(self):
+#     print("move")
 
-  def draw(self):
-    print("draw")
+#   def draw(self):
+#     print("draw")
 
-point1 = Point(10, 20)
-point1.x = 20
-point1.draw()
+# point1 = Point(10, 20)
+# point1.x = 20
+# point1.draw()
 
-print(point1.x)
+# print(point1.x)
+
+
+# class Person:
+#   def __init__(self, name):
+#     self.name = name
+
+#   def talk(self):
+#     print(f"Hi, I'm {self.name}")
+
+
+# john = Person("John")
+# john.talk()
+# print(john.name)
+
+
+class Mammal:
+  def walk(self):
+    print("walk")
+
+class Dog(Mammal):  # Dog inherits Mammal
+  def bark(self):
+    print("bark")
+
+class Cat(Mammal): 
+  pass
+
+dog1 = Dog()
+dog1.walk()
+dog1.bark()
